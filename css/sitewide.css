@@ -1,0 +1,282 @@
+/* Box size fix: https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body {
+font-family: "Fira Sans", Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.75em;
+color: #333;
+background-color: #F2F2F2;
+margin: 0em;
+}
+
+img {
+max-width: 100%;
+}
+
+h1 {
+    font-family: "Merriweather", serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.3em;
+    /* margin: 1em; */
+    color: black;
+}
+
+h2 {
+    margin-bottom: 0em;
+    margin-top: 1.5em;
+    font-weight: 400;
+    color: #444;
+}
+
+h3 {
+    font-family: "Merriweather", serif;
+    font-size: 1.85em;
+    color: #af6d00;
+}
+
+.container {
+    margin: 0em;
+    padding-top: 4.4em;
+}
+
+.navbar {
+	background-color: #559EA3;
+	font-size: 1.25em;
+	padding: 1em;
+	position: fixed;
+	width: 100%;
+    z-index: 1000;
+    margin-top: -1.5em;
+    padding-bottom: 0em;
+}
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+}
+
+.navlinks {
+	padding-left: 0.75em;
+}
+
+.navlinkset {
+    /* text-align: right;
+    display: inline-block;
+    width: 50%;
+    top: -1em; */
+    float: right;
+    margin-top: 2em;
+}
+
+.homelink {
+	text-align: left;
+	max-width: 4em;
+    vertical-align:middle;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align:middle; 
+    margin-left: -0.25em; 
+    font-size: 1.5em; 
+    color: white !important;
+}
+
+.titlebox {
+    min-height: 25vh;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.title {
+    width: 35%;
+    padding: 4em;
+    padding-top: 5em;
+    padding-bottom: 0em;
+}
+
+.titleImage {
+    min-height: 60vh;
+    min-width: 65%;
+    background-image: url(../img/cherry.jpg);
+    background-size: cover;
+}
+
+.nonTitleImage {
+    min-height: 60vh;
+    min-width: 65%;
+    background-image: url(../img/metro.jpg);
+    background-size: cover;
+}
+
+.divider {
+    clear: both;
+    background-color: rgb(215, 223, 223);
+    min-height: 25vh;
+    text-align: center;
+    color: #333;
+    padding-top: 2em;
+}
+
+.button {
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 2em;
+    background: #559EA3;
+    border-radius: 7px;
+    line-height: 7em;
+    margin-bottom: -3.5em;
+}
+
+a.button{
+    color: white;
+    text-decoration: none;
+}
+
+.filter-group {
+    padding: 3em;
+    padding-top: 0em;
+    display: inline-block;
+}
+
+.filter-group div {
+    display: block;
+}
+
+.filter-group h4 {
+    color: #333;
+}
+
+.chart1 {
+    width: 50%; 
+    float: left;
+}
+
+.chart2 {
+    width: 50%; 
+    float: right;
+}
+
+.register {
+    clear: both;
+    padding: 2em;
+    background-color: white;
+}
+
+.form {
+    display: inline-block;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+input[type=text] {
+    margin: 1em;
+    border: 2px solid #5B6F71;
+    border-radius: 7px;
+    min-height: 2em;
+    min-width: 20em;
+}
+
+footer {
+    background-color: #af6d00;
+    min-height: 10em;
+    width: 100%;
+    color: white;
+    padding-bottom: 0.5em;
+}
+
+.filter-group {
+color: #fff;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+.filter-group input[type='checkbox']:first-child + label {
+border-radius: 3px 3px 0 0;
+}
+
+.filter-group label:last-child {
+    border-radius: 0 0 3px 3px;
+    border: none;
+}
+
+.filter-group input[type='checkbox'] {
+    display: none;  
+}
+
+.filter-group input[type='checkbox'] + label {
+    /* background-color: #3386c0; */
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: 1em;
+    background-color: #868686;
+    border-radius: 7px;
+}
+
+.filter-group input[type='checkbox'] + label:hover,
+.filter-group input[type='checkbox']:checked + label {
+    /* background-color: #868686; */
+    background-color: darkslategray;
+}
+
+.filter-group input[type='checkbox']:checked + label:before {
+    background-color: darkslategray;
+    content: 'X';
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.25em;
+    }
+    .navlinkset {
+        float: none;
+        text-align: center;
+        margin: 1em;
+        margin-top: -1em;
+    }
+    .titleImage {
+        min-height: 30vh;
+    }
+
+    .titlebox {
+        display: block;
+    }
+
+    .title {
+        width: 100%;
+        padding: 2em;
+        padding-bottom: 0em;
+    }
+
+    .chart1 {
+        float: none;
+        width: 100%;
+    }
+
+    .chart2 {
+        float: none;
+        width: 100%;
+    }
+
+    .nonTitleImage {
+        display: none;
+    }
+
+    .title h4 {
+        margin-top: 0em;
+    }
+}
