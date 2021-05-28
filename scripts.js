@@ -73,7 +73,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZmQ4MjI4YSIsImEiOiJjazBvY2o4N3EwMDg4M2NyaGQ1M
     
             var labelMS = document.createElement('label');
             labelMS.setAttribute('for', "MSCheckBox");
-            labelMS.innerHTML = '<div style="height: 20px; width: 20px; background-image: url(./img/metro.png); display: inline-block; vertical-align: middle; margin-right: 0.5em; background-size: cover;"></div> Metro Stations'
+            labelMS.innerHTML = '<div style="height: 20px; width: 20px; background-image: url(./img/metro.PNG); display: inline-block; vertical-align: middle; margin-right: 0.5em; background-size: cover;"></div> Metro Stations'
             div.appendChild(labelMS);
     
             // When the checkbox changes, update the visibility of the layer.
